@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-namespace NativeTouchInputPlugin {
-	public class TouchInfo {
+namespace MobileTouchPlugin {
+	public class MobileTouchInfo {
 		/// <summary>
 		/// Finger ID.
 		/// </summary>
@@ -45,4 +45,5 @@ namespace NativeTouchInputPlugin {
 		/// <value>The strength of the finger is pressing the screen.</value>
 		public float force { get; set; }
 	}
+
 }

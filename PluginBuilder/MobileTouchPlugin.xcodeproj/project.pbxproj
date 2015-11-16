@@ -1,0 +1,342 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		BBD0AE421BF9B67800B2C173 /* MobileTouchPlugin-Universal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BBD0AE451BF9B67800B2C173 /* Build configuration list for PBXAggregateTarget "MobileTouchPlugin-Universal" */;
+			buildPhases = (
+				BBD0AE461BF9B6A300B2C173 /* ShellScript */,
+				BBD0AE471BF9B6F800B2C173 /* CopyFiles */,
+			);
+			dependencies = (
+			);
+			name = "MobileTouchPlugin-Universal";
+			productName = "MobileTouchPlugin-Universal";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		BBB9BA9C1BFA422D0033CD03 /* TouchPlugin.mm in Sources */ = {isa = PBXBuildFile; fileRef = BBB9BA991BFA422D0033CD03 /* TouchPlugin.mm */; };
+		BBB9BA9D1BFA422D0033CD03 /* UnityView+Touch.mm in Sources */ = {isa = PBXBuildFile; fileRef = BBB9BA9B1BFA422D0033CD03 /* UnityView+Touch.mm */; };
+		BBB9BA9F1BFA456D0033CD03 /* GameKit.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = BBB9BA9E1BFA456D0033CD03 /* GameKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BBD0AE301BF9ACA800B2C173 /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				BBB9BA9F1BFA456D0033CD03 /* GameKit.framework in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBD0AE471BF9B6F800B2C173 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BBB9BA981BFA422D0033CD03 /* TouchPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchPlugin.h; sourceTree = "<group>"; };
+		BBB9BA991BFA422D0033CD03 /* TouchPlugin.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TouchPlugin.mm; sourceTree = "<group>"; };
+		BBB9BA9A1BFA422D0033CD03 /* UnityView+Touch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UnityView+Touch.h"; sourceTree = "<group>"; };
+		BBB9BA9B1BFA422D0033CD03 /* UnityView+Touch.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UnityView+Touch.mm"; sourceTree = "<group>"; };
+		BBB9BA9E1BFA456D0033CD03 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = /System/Library/Frameworks/GameKit.framework; sourceTree = "<absolute>"; };
+		BBD0AE321BF9ACA800B2C173 /* libMobileTouchPlugin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMobileTouchPlugin.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BBD0AE2F1BF9ACA800B2C173 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BBB9BAA01BFA45750033CD03 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				BBB9BA9E1BFA456D0033CD03 /* GameKit.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		BBD0AE291BF9ACA800B2C173 = {
+			isa = PBXGroup;
+			children = (
+				BBB9BAA01BFA45750033CD03 /* Framework */,
+				BBD0AE341BF9ACA800B2C173 /* MobileTouchPlugin */,
+				BBD0AE331BF9ACA800B2C173 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BBD0AE331BF9ACA800B2C173 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BBD0AE321BF9ACA800B2C173 /* libMobileTouchPlugin.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBD0AE341BF9ACA800B2C173 /* MobileTouchPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				BBB9BA981BFA422D0033CD03 /* TouchPlugin.h */,
+				BBB9BA991BFA422D0033CD03 /* TouchPlugin.mm */,
+				BBB9BA9A1BFA422D0033CD03 /* UnityView+Touch.h */,
+				BBB9BA9B1BFA422D0033CD03 /* UnityView+Touch.mm */,
+			);
+			path = MobileTouchPlugin;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BBD0AE311BF9ACA800B2C173 /* MobileTouchPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBD0AE3B1BF9ACA800B2C173 /* Build configuration list for PBXNativeTarget "MobileTouchPlugin" */;
+			buildPhases = (
+				BBD0AE2E1BF9ACA800B2C173 /* Sources */,
+				BBD0AE2F1BF9ACA800B2C173 /* Frameworks */,
+				BBD0AE301BF9ACA800B2C173 /* Copy Files */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MobileTouchPlugin;
+			productName = MobileTouchPlugin;
+			productReference = BBD0AE321BF9ACA800B2C173 /* libMobileTouchPlugin.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BBD0AE2A1BF9ACA800B2C173 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Mitu217;
+				TargetAttributes = {
+					BBD0AE311BF9ACA800B2C173 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					BBD0AE421BF9B67800B2C173 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = BBD0AE2D1BF9ACA800B2C173 /* Build configuration list for PBXProject "MobileTouchPlugin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BBD0AE291BF9ACA800B2C173;
+			productRefGroup = BBD0AE331BF9ACA800B2C173 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BBD0AE311BF9ACA800B2C173 /* MobileTouchPlugin */,
+				BBD0AE421BF9B67800B2C173 /* MobileTouchPlugin-Universal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BBD0AE461BF9B6A300B2C173 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "xcodebuild_hoge() {\n    xcodebuild \\\n    -target \"${PROJECT_NAME}\" \\\n    -project ${PROJECT_NAME}.xcodeproj \\\n    -configuration ${CONFIGURATION} \\\n    -sdk $1 clean build\n}\n\nBUILD_DIR=\"${SRCROOT}/build\"\nLIB_DIR=\"${SRCROOT}/library\"\nLIB_NAME=\"lib${PROJECT_NAME}.a\"\n\nIOS_LIB=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${LIB_NAME}\"\nSIM_LIB=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${LIB_NAME}\"\nDEST_LIB=\"${LIB_DIR}/${LIB_NAME}\"\n\n\n# remove dir\nrm -rf \"${BUILD_DIR}\"\nrm -rf \"${LIB_DIR}\"\n\n# 1. xcodebuild\nxcodebuild_hoge iphoneos\nxcodebuild_hoge iphonesimulator\n\n# mkdir\nmkdir -p \"${LIB_DIR}\"\n\n# 2. lipo\nlipo \"${IOS_LIB}\" \"${SIM_LIB}\" -create -output \"${DEST_LIB}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BBD0AE2E1BF9ACA800B2C173 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBB9BA9D1BFA422D0033CD03 /* UnityView+Touch.mm in Sources */,
+				BBB9BA9C1BFA422D0033CD03 /* TouchPlugin.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BBD0AE391BF9ACA800B2C173 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BBD0AE3A1BF9ACA800B2C173 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BBD0AE3C1BF9ACA800B2C173 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_TEMP_DIR = ./;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BBD0AE3D1BF9ACA800B2C173 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_TEMP_DIR = ./;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		BBD0AE431BF9B67800B2C173 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BBD0AE441BF9B67800B2C173 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BBD0AE2D1BF9ACA800B2C173 /* Build configuration list for PBXProject "MobileTouchPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBD0AE391BF9ACA800B2C173 /* Debug */,
+				BBD0AE3A1BF9ACA800B2C173 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBD0AE3B1BF9ACA800B2C173 /* Build configuration list for PBXNativeTarget "MobileTouchPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBD0AE3C1BF9ACA800B2C173 /* Debug */,
+				BBD0AE3D1BF9ACA800B2C173 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBD0AE451BF9B67800B2C173 /* Build configuration list for PBXAggregateTarget "MobileTouchPlugin-Universal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBD0AE431BF9B67800B2C173 /* Debug */,
+				BBD0AE441BF9B67800B2C173 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BBD0AE2A1BF9ACA800B2C173 /* Project object */;
+}
